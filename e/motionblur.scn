@@ -1,0 +1,78 @@
+#this is a comment
+output_file renders/motionblur.ppm
+
+###########camera#############
+cam_point 0.0 0.0 1.0
+cam_lookat 0.0 0.0 0.0
+cam_up 0.0 1.0 0.0
+cam_angle 45
+cam_res 1024 1024
+cam_depth 1
+cam_end
+
+###########lights##############
+background_color 0.0 0.0 0.0
+light_ambient 1.0 1.0 1.0
+light_point 0.7 0.7 0.7 2.0 10.0 -2.5
+light_point 0.7 0.7 0.7 -2.0 10.0 -2.5
+#light_parallel 1.0 1.0 1.0 0.0 -3.0 -1.0
+#light_parallel 1.0 1.0 1.0 0.0 -3.0 -1.0
+#light_spot 1.0 1.0 1.0 1.0 0.0 -2.5 0.0 -1.0 0.0 5 20
+
+##########surfaces#############
+
+begin_surface
+surface_sphere -2.1 2.0 -3.0 1.0
+motionblur
+mb .05 -.05 0.0
+mb .10 -.10 0.0
+mb .15 -.15 0.0
+mb .20 -.20 0.0
+mb .25 -.25 0.0
+mb .30 -.30 0.0
+mb .35 -.35 0.0
+mb .4 -.4 0.0
+material phong 0.17 0.18 0.50 0.3 0.9 1.0 200 0.0 0.0 2.3
+end_surface
+
+begin_surface
+surface_sphere -2.1 -2.0 -3.0 1.0
+motionblur
+mb .05 .05 0.0
+mb .10 .10 0.0
+mb .15 .15 0.0
+mb .20 .20 0.0
+mb .25 .25 0.0
+mb .30 .30 0.0
+mb .35 .35 0.0
+mb .4 .4 0.0
+material phong 0.5 0.17 0.18 0.3 0.9 1.0 200 0.0 0.0 2.3
+end_surface
+
+begin_surface
+surface_sphere 2.1 -2.0 -3.0 1.0
+motionblur
+mb -.05 .05 0.0
+mb -.10 .10 0.0
+mb -.15 .15 0.0
+mb -.20 .20 0.0
+mb -.25 .25 0.0
+mb -.30 .30 0.0
+mb -.35 .35 0.0
+mb -.4 .4 0.0
+material phong 0.18 0.5 0.17 0.3 0.9 1.0 200 0.0 0.0 2.3
+end_surface
+
+begin_surface
+surface_sphere 2.1 2.0 -3.0 1.0
+motionblur
+mb -.05 -.05 0.0
+mb -.10 -.10 0.0
+mb -.15 -.15 0.0
+mb -.20 -.20 0.0
+mb -.25 -.25 0.0
+mb -.30 -.30 0.0
+mb -.35 -.35 0.0
+mb -.4 -.4 0.0
+material phong 0.18 0.5 0.17 0.3 0.9 1.0 200 0.0 0.0 2.3
+end_surface

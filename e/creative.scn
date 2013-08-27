@@ -1,0 +1,47 @@
+#this is a comment
+output_file renders/example5.ppm
+
+###########camera#############
+cam_point 0.0 0.0 1.0
+cam_lookat 0.0 0.0 -3.0
+cam_up 0.0 1.0 0.0
+cam_angle 55
+cam_res 1024 1024
+cam_depth 1
+cam_end
+
+###########lights##############
+background_color 0.0 0.0 0.0
+light_ambient 1.0 1.0 1.0
+light_point 0.7 0.7 0.7 2.0 10.0 -2.5
+light_point 0.7 0.7 0.7 -2.0 10.0 -2.5
+#light_parallel 1.0 1.0 1.0 0.0 -3.0 -1.0
+#light_parallel 1.0 1.0 1.0 0.0 -3.0 -1.0
+#light_spot 1.0 1.0 1.0 1.0 2.0 -2.5 0.0 -1.0 0.0 5 20
+
+##########surfaces#############
+
+begin_surface
+surface_mesh Scenes/wineglass.obj
+material phong 0.5 0.5 0.5 0.3 0.9 1.0 20 0.0 0.0 0.0
+translate 0.0 0.0 -5.0
+end_surface
+
+begin_surface
+surface_mesh Scenes/plane_small.obj
+#material phong 0.5 0.5 0.5 0.3 0.9 1.0 20 0.0 0.0 0.0
+material_texture phong Scenes/mramor6x6.ppm 0.3 0.9 1.0 200 0.0 0.0 0.0
+translate 0.0 -2.5 -10.0
+rotateX -90
+scale 20.0 20.0 1.0
+end_surface
+
+begin_surface
+surface_mesh Scenes/plane_small.obj
+#material phong 0.5 0.5 0.5 0.3 0.9 1.0 20 0.0 0.0 0.0
+material_texture phong Scenes/brick.ppm 0.3 0.9 1.0 200 0.0 0.0 0.0
+translate 0.0 0.0 -15.0
+#rotateX -90
+scale 160.0 160.0 1.0
+end_surface
+

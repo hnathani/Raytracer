@@ -31,6 +31,7 @@ The raytracer can be run by passing the name of the file as an argument with the
 ![Example motionblur](https://raw.github.com/hnathani/Raytracer/master/prerendered/motionblur.png)
 
 5. `raytracer e/spotlight.scn`
+
 ![Example motionblur](https://raw.github.com/hnathani/Raytracer/master/prerendered/spotlight.png)
 
 

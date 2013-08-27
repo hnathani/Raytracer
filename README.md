@@ -14,20 +14,25 @@ The raytracer can be run by passing the name of the file as an argument with the
 
 ### Examples
 
+1. `raytracer e/example3.scn anti`
+
 ![Example 3](https://raw.github.com/hnathani/Raytracer/master/prerendered/example3.png)
-`raytracer e/example3.scn anti` `anti` adds anti aliasing
+
+2. `raytracer e/example4.scn`
 
 ![Example 4](https://raw.github.com/hnathani/Raytracer/master/prerendered/example4.png)
-`raytracer e/example4.scn`
+
+3. `raytracer e/example5.scn`
 
 ![Example 5](https://raw.github.com/hnathani/Raytracer/master/prerendered/example5.png)
-`raytracer e/example5.scn`
+
+4. `raytracer e/motionblur.scn`
 
 ![Example motionblur](https://raw.github.com/hnathani/Raytracer/master/prerendered/motionblur.png)
-- `raytracer e/motionblur.scn`
 
+5. `raytracer e/spotlight.scn`
 ![Example motionblur](https://raw.github.com/hnathani/Raytracer/master/prerendered/spotlight.png)
-- `raytracer e/spotlight.scn`
+
 
 
 

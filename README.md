@@ -13,14 +13,21 @@ The raytracer takes a `.scn` file that specifies the lights, objects and object 
 The raytracer can be run by passing the name of the file as an argument with the executable.
 
 ### Examples
-- `raytracer e/example1.scn anti`
-![s](https://raw.github.com/hnathani/Raytracer/master/prerendered/example1.png)
-- `raytracer e/example2.scn anti`
-- `raytracer e/example3.scn anti`
-- `raytracer e/example4.scn anti`
-- `raytracer e/example5.scn anti`
-- `raytracer e/motionblur.scn anti`
-- `raytracer e/spotlight.scn anti`
 
-`anti` adds anti aliasing
+![Example 3](https://raw.github.com/hnathani/Raytracer/master/prerendered/example3.png)
+`raytracer e/example3.scn anti` `anti` adds anti aliasing
+
+![Example 4](https://raw.github.com/hnathani/Raytracer/master/prerendered/example4.png)
+`raytracer e/example4.scn`
+
+![Example 5](https://raw.github.com/hnathani/Raytracer/master/prerendered/example5.png)
+`raytracer e/example5.scn`
+
+![Example motionblur](https://raw.github.com/hnathani/Raytracer/master/prerendered/motionblur.png)
+- `raytracer e/motionblur.scn`
+
+![Example motionblur](https://raw.github.com/hnathani/Raytracer/master/prerendered/spotlight.png)
+- `raytracer e/spotlight.scn`
+
+
 

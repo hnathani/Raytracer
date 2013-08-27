@@ -14,7 +14,7 @@ The raytracer can be run by passing the name of the file as an argument with the
 
 ### Examples
 - `raytracer e/example1.scn anti`
-!(https://raw.github.com/hnathani/Raytracer/master/prerendered/example1.png)
+![s](https://raw.github.com/hnathani/Raytracer/master/prerendered/example1.png)
 - `raytracer e/example2.scn anti`
 - `raytracer e/example3.scn anti`
 - `raytracer e/example4.scn anti`
